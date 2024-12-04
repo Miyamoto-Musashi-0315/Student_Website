@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinayaka A Belludi - Computer Vision Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #1e272e;
+            --secondary-color: #10ac84;
+            --text-color: #f5f5f5;
+            --background-color: #121212;
+            --card-background: #1c1c1c;
+            --about-color: #e17055;
+            --skills-color: #0984e3;
+            --experience-color: #fdcb6e;
+            --projects-color: #6c5ce7;
+            --research-color: #00cec9;
+            --certifications-color: #d63031;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+        .container {
+            width: 80%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 2rem 0;
+        }
+        header h1 {
+            margin-bottom: 0.5rem;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        .contact-info a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+        section {
+            background-color: var(--card-background);
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+        }
+        h2 {
+            margin-bottom: 1rem;
+        }
+        .about h2 {
+            color: var(--skills-color);
+        }
+        .skills-section h2 {
+            color: var(--skills-color);
+        }
+        .experience-section h2 {
+            color: var(--skills-color);
+        }
+        .projects-section h2 {
+            color: var(--skills-color);
+        }
+        .research-section h2 {
+            color: var(--skills-color);
+        }
+        .certifications-section h2 {
+            color: var(--skills-color);
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .skill-tag {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 0.3rem 0.7rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        .project, .experience {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #333;
+        }
+        .project:last-child, .experience:last-child {
+            border-bottom: none;
+        }
+        .project h3, .experience h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+        .project-tools, .experience-tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .project-tool, .experience-tool {
+            background-color: #333;
+            color: var(--secondary-color);
+            padding: 0.2rem 0.5rem;
+            border-radius: 15px;
+            font-size: 0.7rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Vinayaka A Belludi</h1>
+            <p>Computer Vision | AI/ML | Deep Learning Engineer</p>
+            <div class="contact-info">
+                <a href="mailto:belludivinayakaa@gmail.com">belludivinayakaa@gmail.com</a>
+                <a href="tel:+919916658003">+91 99166-58003</a>
+                <a href="https://github.com/Miyamoto-Musashi-0315" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>A passionate Computer Vision and AI/ML engineer with experience in image processing, machine learning, deep learning, and 3D reconstruction. Currently pursuing a Bachelor's in Electronics and Communication, with a strong focus on having fun with AI.</p>
+        </section>
+
+        <section class="skills-section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C/C++</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">OpenCV</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Scikit-Learn</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">Unity</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">Computer Vision</span>
+            </div>
+        </section>
+
+        <section class="experience-section">
+            <h2>Experience</h2>
+            <div class="experience">
+                <h3>Computer Vision Intern | Arka Creatos</h3>
+                <p>Developed an Oral Cancer Segmentation Model and a PyQt5 application for automated reporting, improving efficiency by 70%.</p>
+                <div class="experience-tools">
+                    <span class="experience-tool">PyQt5</span>
+                    <span class="experience-tool">Medical Image Processing</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Neural Implicit 3D Reconstruction</h3>
+                <p>Implemented MonoSDF for high-quality 3D reconstructions using NeRFs, improving spatial accuracy by 10%.</p>
+                <div class="project-tools">
+                    <span class="project-tool">PyTorch</span>
+                    <span class="project-tool">NeRFs</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Denoising 3D Point Cloud</h3>
+                <p>Implemented Points2Surf for noise removal using Signed Distance Functions and Marching Cubes.</p>
+                <div class="project-tools">
+                    <span class="project-tool">PyTorch</span>
+                    <span class="project-tool">Point Clouds</span>
+                    <span class="project-tool">Noise Removal</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Semantic Segmentation on IDD</h3>
+                <p>Trained deep learning models (UNet and PSPNet) on the Indian Driving Dataset, achieving up to 78% accuracy.</p>
+                <div class="project-tools">
+                    <span class="project-tool">TensorFlow</span>
+                    <span class="project-tool">Semantic Segmentation</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="research-section">
+            <h2>Research Publications</h2>
+            <div class="project">
+                <h3>AfforDrive: Detection of Drivable Area for Autonomous Vehicles</h3>
+                <p>Presented at PReMI 2023 on drivable area detection using Visual Affordance.</p>
+            </div>
+            <div class="project">
+                <h3>VisionCraft: Advanced Image Captioning with Pre-trained Models</h3>
+                <p>Image captioning using multi-modal learning, published at ICMISC 2024.</p>
+            </div>
+        </section>
+
+        <section class="certifications-section">
+            <h2>Certifications & Achievements</h2>
+            <div class="project">
+                <h3>Game Development Mini Degree</h3>
+                <p>Completed at XAMK Open University, Finland, earned 25 ECTS credits, and developed 3 games.</p>
+                <div class="project-tools">
+                    <span class="project-tool">Game Development</span>
+                    <span class="project-tool">Unity</span>
+                </div>
+            </div>
+            <div class="project">
+                <h3>CVPR Workshop Participation</h3>
+                <p>Contributed to a semantic segmentation project, working with a dataset of 30,000 images across 27 classes.</p>
+                <div class="project-tools">
+                    <span class="project-tool">Semantic Segmentation</span>
+                    <span class="project-tool">Machine Learning</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>2024 Vinayak A Belludi | Powered by Passion for Deep Learning.</p>
+    </footer>
+</body>
+</html>
